@@ -23,7 +23,7 @@ module my-eks-cluster {
   source = "./modules/custom-eks-cluster"
 
   vpcCidrBlock = var.vpcCidrBlock
-  subnetList   = var.subnetList
+  subnetsMap   = var.subnetsMap
 
   eksClusterName          = "kvvTestTerraformEksCluster"
   eksClusterNodeGroupName = "kvvTestTerraformEksClusterNodeGroup"

@@ -3,9 +3,9 @@ variable "vpcCidrBlock" {
   type        = string
 }
 
-variable "subnetList" {
-  description = "The list of three subnets"
-  type        = list(string)
+variable "subnetsMap" {
+  description = "Public subnets, mapped to AZs"
+  type        = map(map(string))
 }
 
 variable "eksClusterName" {

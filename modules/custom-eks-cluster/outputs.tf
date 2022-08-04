@@ -1,5 +1,5 @@
 output "nodeGroupSubnetsAwsIdsOutput" {
-  value = local.nodeGroupSubnetsAwsIdsList
+  value = local.publicSubnetsIds
   description = "AWS IDs of the created subnets"
 }
 
